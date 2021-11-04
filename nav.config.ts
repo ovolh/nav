@@ -3,11 +3,11 @@ import { IConfig } from './src/types'
 const c: IConfig = {
   // Deployment language - 部署语言
   // zh-CN | en
-  language: 'en',
+  language: 'zh-CN',
 
   // [Mondatory], Please replace following Github url with your own Github address which you forked in.
   // [必填], 请填写您的仓库地址
-  gitRepoUrl: 'https://github.com/xjh22222228/nav',
+  gitRepoUrl: 'https://github.com/ovolh/nav',
 
   // Deployment branch name
   // 部署分支
@@ -17,7 +17,7 @@ const c: IConfig = {
   // If you have a good-looking Loading, please contact us!
   // 页面Loading: loading1 | loading2 | loading3 | random
   // 如果您有好看的加载Loading请联系我们！
-  loading: 'random', // 随机加载
+  loading: 'loading1', // 随机加载
 
   // Whether the route is in Hash mode, if it is deployed on github pages, it must be set to true
   // 路由是否Hash模式, 如果是部署在github pages 务必设为 true
@@ -29,7 +29,7 @@ const c: IConfig = {
 
   // Your website address is good for SEO
   // 您的网站地址，有利于SEO
-  homeUrl: 'https://nav3.cn',
+  homeUrl: 'https://nav.ovolh.com',
 
   // Site title
   // 网站标题
@@ -45,7 +45,7 @@ const c: IConfig = {
 
   // Default theme: Light | Sim | Side | App | Shortcut
   // 默认主题: Light | Sim | Side | App | Shortcut
-  theme: 'Light',
+  theme: 'Side',
 
   // The content at the bottom of the website, copyright information, record number, can be HTML
   // 网站底部内容, 版权信息、备案号, 可以是 HTML
