@@ -33,7 +33,7 @@ const c: IConfig = {
 
   // Site title
   // 网站标题
-  title: '发现导航 - 精选实用导航网站1',
+  title: '发现导航 - 精选实用导航网站121',
 
   // Site description
   // 网站描述
