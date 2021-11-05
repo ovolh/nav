@@ -22,15 +22,6 @@ jobs:
         env:
           CI: true
       # Deploy
-      - name: Deploy
-        uses: easingthemes/ssh-deploy@main
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
-          ARGS: "-avz --delete"
-          SOURCE: "[Current File Dir]"
-          REMOTE_HOST: "[Domain]"
-          REMOTE_USER: "[UserName]"
-          TARGET: "[Server Dir]"
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@main
         env:
