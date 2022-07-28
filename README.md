@@ -71,32 +71,27 @@ Its as easy as counting numbers "3 2 1" that simple!
 
 2、[https://github.com/settings/tokens](https://github.com/settings/tokens) apply for a token, check the corresponding permissions, if you don’t understand, select all, copy and save the token.
 
-3、https://github.com/askfriends/nav/settings/secrets/actions/new  Create a new application token, name fill in TOKEN (All are uppercase).
+3、https://github.com/username/nav/settings/secrets/actions/new  Create a new application token, name fill in TOKEN (All are uppercase).
 
-4、Go to https://github.com/askfriends/nav/actions click "Green Button"
+4、Go to https://github.com/username/nav/actions click "Green Button"
 
 5、Be sure to modify the project configuration file [nav.config.ts](nav.config.ts)
 
-6、After 5 minutes, open https://askfriends.github.io/nav , you will see a very powerful navigation website.
+6、After 5 minutes, open https://username.github.io/nav , you will see a very powerful navigation website.
 
 ### Method 2 (Free Vercel)
 The steps are the same as the first method, except that the fourth step is not needed.
 For specific use, follow the steps [https://github.com/apps/vercel](https://github.com/apps/vercel)
 
 
-Note: If you want to deploy your own domain name, then the above tutorial is also suitable, as it provides automated deployment, and then through CNAME or Revers Proxy implementation:
-```conf
-# nginx
+### Method 3 (Free Netlify)
+[https://www.netlify.com/](https://www.netlify.com/)
 
-server {
-    listen       80;
-    server_name  www.nav3.cn nav3.cn;
 
-    location / {
-        proxy_pass https://xjh22222228.github.io/nav/;
-    }
-}
-```
+
+
+## Backstage
+Modify the routing address to `system`, such as: https://www.nav3.cn/#/light Change to https://www.nav3.cn/#/system
 
 
 ## Bookmark import
@@ -108,18 +103,9 @@ Support importing from Chrome bookmarks (WebKit kernel should be supported~), it
 The browser opens chrome://bookmarks/ to export the bookmarks to get the html file, and then import it from the background of the navigation website.
 
 
-## Choose the Loading that suits you
-Modify the `loading` field in [Configuration File](nav.config.ts).
-
-<img src="media/loading1.png" width="400px" />
-<img src="media/loading2.png" width="400px" />
-<img src="media/loading3.png" width="400px" />
 
 
-
-
-
-##upgrade
+## Upgrade
 Before upgrading, please back up the `data` folder and `nav.config.ts` in the root directory, and replace them after the upgrade.
 Click the `Watch` button in the upper right corner to track the version upgrade for the first time.
 
@@ -174,3 +160,6 @@ Thank you for your [contribution](https://github.com/xjh22222228/nav/issues), me
 
 ## Suggest
 If you have any functional suggestions, you can initiate an [issue](https://github.com/xjh22222228/nav/issues), Thank you.
+
+## LICENSE
+[MIT](./LICENSE)

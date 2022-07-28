@@ -88,21 +88,13 @@
 
 
 
+### 推荐方式三(Netlify免费)
+[https://www.netlify.com/](https://www.netlify.com/)
 
-注：如果想部署到自己的域名，那么以上教程同样适合，因为它提供了自动化部署， 之后可以通过 `CNAME` 或 `反向代理` 实现：
 
-```conf
-# nginx
 
-server {
-    listen       80;
-    server_name  www.nav3.cn nav3.cn;
-
-    location / {
-        proxy_pass https://xjh22222228.github.io/nav/;
-    }
-}
-```
+## 后台
+将路由地址修改为 `system` 即可进入，如: https://www.nav3.cn/#/light 修改为 https://www.nav3.cn/#/system
 
 
 ## 书签导入
@@ -111,16 +103,6 @@ server {
 ![](https://raw.githubusercontent.com/xjh22222228/public/gh-pages/nav/import.png)
 
 浏览器打开 [chrome://bookmarks/](chrome://bookmarks/) 导出书签得到 html 文件, 接着从导航网站后台导入即可。
-
-
-## 选择适合您的Loading
-在[配置文件](nav.config.ts)修改 `loading` 字段。
-
-<img src="media/loading1.png" width="400px" />
-<img src="media/loading2.png" width="400px" />
-<img src="media/loading3.png" width="400px" />
-
-
 
 
 
@@ -194,8 +176,11 @@ Thank you for your [contribution](https://github.com/xjh22222228/nav/issues), me
 感谢您的认可：
 | 姓名    | 支持金额              |
 | --------------------------------------- |----------- |
-| [aiyou9](https://github.com/aiyou9)     | ￥50.00     |
+| [aiyou9](https://github.com/aiyou9)     | ￥50.00、￥50.00     |
 | [lastares](https://github.com/lastares)       | ￥25.00     |
 | [MrJxySteven](https://github.com/MrJxySteven) | ￥20.00     |
 | 路人甲     | ￥50.00     |
 
+
+## 协议
+[MIT](./LICENSE)
